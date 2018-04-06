@@ -24,6 +24,7 @@ For more information, please read [Building a UI Component in 2017 and Beyond](h
 * [`ebay-menu`](https://github.com/eBay/ebayui-core/tree/master/src/components/ebay-menu)
 * [`ebay-select`](https://github.com/eBay/ebayui-core/tree/master/src/components/ebay-select)
 * [`ebay-notice`](https://github.com/eBay/ebayui-core/tree/master/src/components/ebay-notice)
+* [`ebay-carousel`](https://github.com/eBay/ebayui-core/tree/master/src/components/ebay-carousel)
 
 ## Getting Started
 
