@@ -1,0 +1,40 @@
+<nav class=data.classes ${data.htmlAttributes} w-bind aria-labelledby="pagination-heading" role="navigation">
+    <span aria-live="polite" role="status">
+        <h2 class="clipped"
+            id="pagination-heading">
+            ${data.currText}
+        </h2>
+    </span>
+    <a aria-disabled=data.prevItem.disabled
+        aria-label=data.ariaLabelPrev
+        class=data.prevItem.class
+        href=data.prevItem.href
+        w-onclick="handlePreviousPage"
+        if(data.prevItem)>
+        <svg aria-hidden="true" focusable="false" width="16" height="16">
+            <use xlink:href="#svg-icon-arrow-left"></use>
+        </svg>
+    </a>
+    <ol class="pagination__items">
+        <for(item in data.items | status-var=loop)>
+            <li class="pagination__item__container">
+                <a aria-current=(item.current ? "page" : '')
+                    href=item.href
+                    class="pagination__item"
+                    w-onclick="handlePageClick"
+                    w-body=item.renderBody>
+                </a>
+            </li>
+        </for>
+    </ol>
+    <a aria-disabled=data.nextItem.disabled
+        aria-label=data.ariaLabelNext
+        class=data.nextItem.class
+        href=data.nextItem.href
+        w-onclick="handleNextPage"
+        if(data.nextItem)>
+        <svg aria-hidden="true" focusable="false" width="16" height="16">
+            <use xlink:href="#svg-icon-arrow-right"></use>
+        </svg>
+    </a>
+</nav>

@@ -11,6 +11,7 @@
         "../src/components/ebay-menu",
         "../src/components/ebay-select",
         "../src/components/ebay-notice",
-        "../src/components/ebay-breadcrumb"
+        "../src/components/ebay-breadcrumb",
+        "../src/components/ebay-pagination"
     ]
 }

@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        "@ebay/skin/pagination",
+        "require: marko-widgets",
+        "require: ./index.js",
+        "./style.less"
+    ]
+}

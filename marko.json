@@ -83,5 +83,25 @@
             "@*": "expression"
         }
     },
-    "<ebay-breadcrumb-item>": {}
+    "<ebay-breadcrumb-item>": {},
+    "<ebay-pagination>": {
+        "renderer": "./src/components/ebay-pagination/index.js",
+        "transformer": "./src/common/transformer/index.js",
+        "@class": "string",
+        "@aria-label-prev": "string",
+        "@aria-label-next": "string",
+        "@curr-text": "string",
+        "@fake-link": "string",
+        "@*": "expression",
+        "@items <item>[]": {
+            "@disabled": "string",
+            "@href": "string",
+            "@role": "string",
+            "@previous": "string",
+            "@next": "string",
+            "@current":"string",
+            "@*": "expression"
+        }
+    },
+    "<ebay-pagination-item>": {}
 }
